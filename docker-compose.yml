@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    command: "yarn start"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    command: "yarn start"
+    ports:
+      - "9999:9999"
+    volumes:
+      - ./api:/app
