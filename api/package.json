@@ -1,0 +1,14 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-dev": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node-dev index.js"
+  }
+}
